@@ -1,6 +1,7 @@
 $(function() {
     let times;
 
+    // REQUEST CONFIGURATION
     $.ajax({
         beforSend: function(xhr) {
             if(xhr.overrideMimeType)
@@ -8,6 +9,7 @@ $(function() {
         }
     });
 
+    // GET DATA JSON
     function loadTimeTable() {
         $.getJSON('../data/agenda.json')
         .done(function(data) {
@@ -18,6 +20,7 @@ $(function() {
     }
     loadTimeTable();
 
+    // CLICK DISPLAY SCHEDULE
     $('#buttons').on('click', 'button', function(e) {
         e.preventDefault();
         let eventNum = this.id;
@@ -36,6 +39,7 @@ $(function() {
         $('#desc').empty();
     });
 
+    // CLICK DISPLAY EVENT
     $('#agenda').on('click', 'a', function(e) {
         e.preventDefault();
 
