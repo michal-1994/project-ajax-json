@@ -1,0 +1,62 @@
+@import url('../fontello/css/fontello.css');
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: rgba(39, 39, 180, 0.902);
+}
+.agenda {
+  padding: 10px;
+}
+.agenda ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.agenda ul li {
+  border-top: 1px solid rgba(39, 39, 180, 0.902);
+}
+.agenda ul li:last-child {
+  border-bottom: 1px solid rgba(39, 39, 180, 0.902);
+}
+.agenda ul li a {
+  display: block;
+  padding: 10px 20px;
+}
+.agenda ul li a span {
+  font-weight: 500;
+}
+.agenda ul li a i {
+  display: none;
+}
+.agenda ul li a.active {
+  position: relative;
+}
+.agenda ul li a.active i {
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -12px;
+  font-size: 18px;
+}
+.desc {
+  padding: 10px;
+}
+.desc article {
+  padding: 20px;
+  background: rgba(39, 39, 180, 0.902);
+  color: #dedede;
+  border-radius: 3px;
+}
+.desc h4 {
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+.desc p {
+  font-size: 15px;
+  line-height: 1.7;
+  opacity: 0.8;
+}
